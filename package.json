@@ -1,0 +1,34 @@
+{
+  "name": "assertify",
+  "version": "1.0.0",
+  "description": "A lightweight TypeScript test runner built from scratch",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "assertify": "./bin/assertify.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node bin/assertify.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "test",
+    "testing",
+    "test-runner",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ]
+}
